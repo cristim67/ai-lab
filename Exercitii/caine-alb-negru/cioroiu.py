@@ -1,14 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May 21 12:55:34 2024
-
-@author: ioana
-"""
-
-import numpy as np
-from skimage import io, color, measure, feature
 import matplotlib.pyplot as plt
+import numpy as np
 from scipy import signal
+from skimage import color, feature, io, measure
 from sklearn import cluster
 
 plt.close('all')

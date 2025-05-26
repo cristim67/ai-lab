@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 20 16:07:31 2024
-
-@author: ioana
-"""
-
 #1) Formati o img de dim 180x180 cu 3 bare verticale de dim egale a caror intensitati de gri sunt in ordine de la stanga la dreapta: 100,160,220. 
 #Adaugati zgomot de dispersie 12 si alegeti pragurile de segmentare (manuala) corespunzatoare a.i. bara din stanga sa aiba eticheta 1,
 #bara din mijloc sa aiba eticheta 2 si bara din dreapta eticheta 0. Afisati imaginea segmentata.
@@ -17,10 +10,10 @@ Created on Mon May 20 16:07:31 2024
 #Afisati rezultatul final.
 #4) Det automat si afisati conturul obiectului cel mai aproape de un "cerc ideal".
 
-import numpy as np
-from skimage import io, color, measure
 import matplotlib.pyplot as plt
+import numpy as np
 from scipy import signal
+from skimage import color, io, measure
 from sklearn import cluster
 
 plt.close('all')

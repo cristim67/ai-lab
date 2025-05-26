@@ -1,7 +1,0 @@
-matplotlib>=3.5.0
-numpy>=1.21.0
-scikit-fuzzy>=0.4.2
-fcmeans>=1.1.0
-scipy>=1.7.0
-scikit-image>=0.19.0
-scikit-learn>=1.0.0 

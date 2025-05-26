@@ -1,16 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May 31 09:02:47 2022
+import math
 
-@author: Ev
-"""
-
+import matplotlib.pyplot as plt
 import numpy as np
+
 # from fcmeans import FCM
 import skfuzzy as fuzz
-from skimage import io, color, measure
-import matplotlib.pyplot as plt
-import math
+from skimage import color, io, measure
 
 ##aducerea img si plotarea ei si a hist\
 L=256  

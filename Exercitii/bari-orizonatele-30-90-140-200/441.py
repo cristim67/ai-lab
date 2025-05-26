@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May 21 10:07:23 2024
-
-@author: ioana
-"""
-
 #1) Formati o img de dim 200x200 cu 4 bare orizontale de dim egale a caror intensitati de gri sunt in ordine de sus in jos: 30, 90, 140,200. 
 #Adaugati zgomot de dispersie 15 si alegeti pragurile de segmentare (manuala) corespunzatoare a.i. barile sa aiba urmatoarele etichete de sus in jos:3,0,2,1. 
 #Afisati imaginea rezultata.
@@ -14,10 +7,10 @@ Created on Tue May 21 10:07:23 2024
 #4) Folosind raportul de compactitate det automat si afisati conturul obiectului cel mai aproape de un "cerc ideal".
 
 
-import numpy as np
-from skimage import io, color, measure
 import matplotlib.pyplot as plt
+import numpy as np
 from scipy import signal
+from skimage import color, io, measure
 from sklearn import cluster
 
 plt.close('all')

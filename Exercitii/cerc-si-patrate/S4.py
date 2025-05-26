@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 20 23:25:12 2024
-
-@author: ioana
-"""
-
 ########### Bilet S4 #############
 
 ## CRED CA ASA ERA  CERINTA 
@@ -17,10 +10,10 @@ Created on Mon May 20 23:25:12 2024
 #       Afisati rezultatul final
 # -> 4) Det automat si afisati conturul obiectului cel mai aproape de un "cerc ideal".
 
-import numpy as np
-from skimage import io, color, measure
 import matplotlib.pyplot as plt
+import numpy as np
 from scipy import signal
+from skimage import color, io, measure
 from sklearn import cluster
 
 plt.close('all')

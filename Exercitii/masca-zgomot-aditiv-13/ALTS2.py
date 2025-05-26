@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 20 20:43:56 2024
-
-@author: ioana
-"""
-
 #1) Cititi si afisati img alts2.png. Adaugati zgomot aditiv gaussian de dispersie 13.
 #Sa se segmenteze imaginea cu praguri alese manual, a.i. fundalul sa fie negru, 
 #patratele si cercurile sa aiba acelasi ton de gri, iar dreptunghiurile sa fie albe. 
@@ -18,10 +11,10 @@ Created on Mon May 20 20:43:56 2024
 #4) Det automat si afisati conturul obiectului cu suprafata cea mai mare.
 
 
-import numpy as np
-from skimage import io, color, measure
 import matplotlib.pyplot as plt
+import numpy as np
 from scipy import signal
+from skimage import color, io, measure
 from sklearn import cluster
 
 plt.close('all')

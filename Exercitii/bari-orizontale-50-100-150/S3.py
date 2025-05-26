@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun May 19 19:07:58 2024
-
-@author: ioana
-"""
-
 #1) Formati o img de dim 210x210 cu 3 bare orizontale de dim egale a caror intensitati de gri sunt in ordine de sus in jos: 50,100,150. 
 #Adaugati zgomot de dispersie 15 si alegeti pragurile de segmentare (manuala) corespunzatoare a.i. bara de sus sa aiba eticheta 1,
 #bara din mijloc sa aiba eticheta 2 si bara de jos eticheta 0. Afisati imaginea rezultata.
@@ -14,10 +7,10 @@ Created on Sun May 19 19:07:58 2024
 #4) Afisati componenta verticala a conturului asociat obiectului care ocupa cel mai mult din imagine daca aceasta repr cel putin 10% din suprafata totala.
 #In caz contrar afisati componenta orizontala.
 
-import numpy as np
-from skimage import io, color, measure
 import matplotlib.pyplot as plt
+import numpy as np
 from scipy import signal
+from skimage import color, io, measure
 from sklearn import cluster
 
 plt.close('all')

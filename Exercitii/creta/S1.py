@@ -1,23 +1,13 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 20 17:33:32 2024
-
-@author: ioana
-"""
-
 # Se da img "unu.bmp".
 #a) Sa se segmenteze imaginea cu praguri de segmentare alese manual, pt a extrage obiectele deschise la culoare
 #b) Sa se extraga(in mod automat) obiectul cel mai alungit din imagine si sa i se calculeze si afiseze conturul
 #c) Sa se numere cate obiecte ocupa mai putin de 1.25% din suprafata imaginii si sa se extraga aceste obiecte intr-o alta imagine
 
 
-import numpy as np
-from skimage import io, color, measure
 import matplotlib.pyplot as plt
+import numpy as np
+from skimage import color, io, measure
 from sklearn import cluster
-
-
-
 
 ############################### PUNCTUL A
 plt.close('all')
