@@ -21,7 +21,7 @@ plt.close('all')
 
 
 ################################################ EX 1
-img= io.imread('alts2.png')
+img= io.imread('s1.png')
 print(np.shape(img))
 img_plan=img[:,:,1]
 plt.figure(),plt.imshow(img_plan,cmap="gray"),plt.title("Img originala"),plt.colorbar(),plt.show()
