@@ -208,7 +208,7 @@ if hexagon_object is not None:
     # Afișăm și conturul obiectului
     contour = measure.find_contours(hexagon_image, 0.5)[0]
     plt.figure(figsize=(10, 8))
-    plt.plot(contour[:, 1], contour[:, 0], 'r-', linewidth=2)
+    plt.plot(contour[:, 1], contour[:, 0])
     plt.title("Conturul obiectului cel mai apropiat de un hexagon ideal")
     plt.axis('equal')
     plt.show()
