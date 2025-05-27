@@ -174,8 +174,8 @@ if len(ratios) > 0:
 # r = 24 / sqrt(3)
 # obs latura este considerată 1 pentru raportul ideal
 
-latura = 1
-ideal_hexagon_ratio = 72 / (3*latura*latura*math.sqrt(3))
+l = 1
+ideal_hexagon_ratio = 72 / (3*l*l*math.sqrt(3))
 print(f"Raportul teoretic pentru un hexagon regulat: {ideal_hexagon_ratio:.2f}")
 
 # Găsim obiectul cu raportul cel mai apropiat de hexagonul ideal
