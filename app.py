@@ -74,7 +74,7 @@ if image2.ndim == 3:
     image2 = color.rgb2gray(image2)  # Apoi convertim la tonuri de gri
 
 # Calculul gradientului folosind convoluții
-# Folosim doi nuclei Sobel pentru a calcula gradientul în direcțiile x și y
+# Folosim doi nuclei Sobel pentru a calcula gradientul în direcțiile x și y pentru a detecta marginile.
 gradient_x = signal.convolve2d(image2,np.array([[0,-1,0],[0,0,0],[0,1,0]]),boundary='symm', mode='same')
 gradient_y = signal.convolve2d(image2,np.array([[0,0,0],[-1,0,1],[0,0,0]]),boundary='symm', mode='same')
 gradient = np.abs(gradient_x)+np.abs(gradient_y)  # Gradientul total este suma modulelor
