@@ -6,9 +6,9 @@ Created on Tue Apr  9 13:24:55 2024
 """
 
 
+import matplotlib.pyplot as plt
 import numpy as np
 from skimage import io
-import matplotlib.pyplot as plt
 
 plt.close('all')
 
@@ -40,6 +40,7 @@ Yzg=np.uint8(Yzg)
 
 plt.figure(),plt.imshow(Y,cmap='gray',vmin=0,vmax=255),plt.colorbar(),plt.show()
 from scipy import signal
+
 fx=signal.convolve2d(Y,np.array([[0,-1,0],[0,0,0],[0,1,0]]),boundary='symm', mode='same')
 fy=signal.convolve2d(Y,np.array([[0,0,0],[-1,0,1],[0,0,0]]),boundary='symm', mode='same')
 gradY=np.abs(fx)+np.abs(fy)

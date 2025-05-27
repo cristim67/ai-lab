@@ -143,12 +143,7 @@ plt.figure(),plt.imshow(img2,cmap="gray"),plt.title("s2 originala"),plt.colorbar
 
 # Convert to grayscale if the image is color
 if len(img2.shape) == 3:
-    if img2.shape[2] == 4:  # RGBA image
-        # Convert RGBA to RGB first
-        img2_rgb = color.rgba2rgb(img2)
-        img2_grey = np.uint8(255*color.rgb2gray(img2_rgb))
-    else:  # RGB image
-        img2_grey = np.uint8(255*color.rgb2gray(img2))
+    img2_grey = np.uint8(255*color.rgb2gray(img2))
 else:
     img2_grey = img2
 
